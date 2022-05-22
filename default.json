@@ -1,5 +1,14 @@
 {
 	"extends": [
 		"config:base"
+	],
+	"packageRules": [
+		{
+			"groupName": "all package updates",
+			"groupSlug": "all-updates",
+			"matchPackagePatterns": [
+				"*"
+			]
+		}
 	]
 }
