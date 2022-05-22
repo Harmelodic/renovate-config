@@ -4,6 +4,7 @@
 	],
 	"packageRules": [
 		{
+			"automerge": true,
 			"groupName": "all package updates",
 			"groupSlug": "all-updates",
 			"matchPackagePatterns": [
