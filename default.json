@@ -5,11 +5,15 @@
 	"packageRules": [
 		{
 			"automerge": true,
+			"automergeStrategy": "squash",
+			"automergeType": "pr",
 			"groupName": "all package updates",
 			"groupSlug": "all-updates",
 			"matchPackagePatterns": [
 				"*"
-			]
+			],
+			"platformAutomerge": true,
+			"pruneBranchAfterAutomerge": true
 		}
 	],
 	"separateMajorMinor": false
