@@ -19,5 +19,8 @@
 	],
 	"platformAutomerge": true,
 	"pruneBranchAfterAutomerge": true,
+	"reviewers": [
+		"Harmelodic"
+	],
 	"separateMajorMinor": false
 }
