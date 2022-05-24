@@ -14,10 +14,10 @@
 			"groupSlug": "all-updates",
 			"matchPackagePatterns": [
 				"*"
-			],
+			]
 		}
 	],
 	"platformAutomerge": true,
-	"pruneBranchAfterAutomerge": true
+	"pruneBranchAfterAutomerge": true,
 	"separateMajorMinor": false
 }
