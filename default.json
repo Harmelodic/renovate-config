@@ -4,7 +4,7 @@
 	],
 	"automerge": true,
 	"automergeStrategy": "squash",
-	"automergeType": "branch",
+	"automergeType": "pr",
 	"extends": [
 		"config:base"
 	],
