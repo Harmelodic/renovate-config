@@ -10,8 +10,8 @@
 	],
 	"packageRules": [
 		{
-			"groupName": "all package updates",
-			"groupSlug": "all-updates",
+			"groupName": "all",
+			"groupSlug": "all",
 			"matchPackagePatterns": [
 				"*"
 			]
