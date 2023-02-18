@@ -20,5 +20,15 @@
 	"platformAutomerge": true,
 	"pruneBranchAfterAutomerge": true,
 	"reviewersFromCodeOwners": true,
+	"regexManagers": [
+		{
+			"datasourceTemplate": "docker",
+			"description": "Jib Maven Plugin: from image",
+			"fileMatch": ["^pom.xml$"],
+			"matchStrings": [
+				"<from>\\s+<image>(\\s*)(?<depName>.*?):(?<currentValue>.*?)@(?<currentDigest>sha256:[a-f0-9]+)(\\s*)<\\/image>"
+			]
+		}
+	],
 	"separateMajorMinor": false
 }
