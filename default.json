@@ -15,7 +15,16 @@
 			"matchPackagePatterns": [
 				"*"
 			]
-		}
+		},
+		{
+			"allowedVersions": "!/^4\\.5\\.0$/",
+			"description": "Block broken PACT 4.5.0",
+			"matchPackageNames": [
+				"au.com.dius.pact.consumer:junit5",
+				"au.com.dius.pact.provider:junit5spring",
+				"au.com.dius.pact.provider:maven"
+			]
+    		}
 	],
 	"platformAutomerge": true,
 	"pruneBranchAfterAutomerge": true,
