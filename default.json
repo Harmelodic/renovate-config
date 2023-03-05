@@ -25,7 +25,7 @@
 			"datasourceTemplate": "docker",
 			"description": "Kubernetes Deployment > spec.template.spec.containers.-.image",
 			"fileMatch": [
-				"^\\.yaml$"
+				"^.*\\.yaml$"
 			],
 			"matchStrings": [
 				"(\\s*)image:(\\s*)(?<depName>.*?):(?<currentValue>.*?)(\\n)"
