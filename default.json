@@ -23,9 +23,19 @@
 	"regexManagers": [
 		{
 			"datasourceTemplate": "docker",
+			"description": "Kubernetes Deployment > spec.template.spec.containers.-.image",
+			"fileMatch": [
+				"^\\.yaml$"
+			],
+			"matchStrings": [
+				"(\\s*)image:(\\s*)(?<depName>.*?):(?<currentValue>.*?)(\\n)"
+			]
+		},
+		{
+			"datasourceTemplate": "docker",
 			"description": "Maven > jib-maven-plugin > from image",
 			"fileMatch": [
-				"^pom.xml$"
+				"^pom\\.xml$"
 			],
 			"matchStrings": [
 				"<from>(\\s*)<image>(\\s*)(?<depName>.*?):(?<currentValue>.*?)@(?<currentDigest>sha256:[a-f0-9]+)(\\s*)<\\/image>"
