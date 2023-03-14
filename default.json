@@ -40,6 +40,16 @@
 			"matchStrings": [
 				"<from>(\\s*)<image>(\\s*)(?<depName>.*?):(?<currentValue>.*?)@(?<currentDigest>sha256:[a-f0-9]+)(\\s*)<\\/image>"
 			]
+		},
+		{
+			"datasourceTemplate": "docker",
+			"description": "Argo Application > spec.source.targetRevision (renovate comment)",
+			"fileMatch": [
+				"^.*\\.yaml$"
+			],
+			"matchStrings": [
+				"renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s+targetRevision:\\s(?<currentValue>.*)"
+			]
 		}
 	],
 	"separateMajorMinor": false
