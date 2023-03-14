@@ -42,13 +42,13 @@
 			]
 		},
 		{
-			"datasourceTemplate": "docker",
-			"description": "Argo Application > spec.source.targetRevision (renovate comment)",
+			"datasourceTemplate": "helm",
+			"description": "Argo Application > Helm Chart",
 			"fileMatch": [
 				"^.*\\.yaml$"
 			],
 			"matchStrings": [
-				"renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s+targetRevision:\\s(?<currentValue>.*)"
+				"source:\\s+chart:\\s(?<depName>.*?)\\s+repoURL:\\s(?<registryUrl>.*?)\\s+targetRevision:\\s(?<currentValue>.*?)\\s"
 			]
 		}
 	],
