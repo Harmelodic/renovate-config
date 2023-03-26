@@ -10,8 +10,8 @@
 	],
 	"packageRules": [
 		{
-			"groupName": "all",
-			"groupSlug": "all",
+			"groupName": "multiple dependencies",
+			"groupSlug": "multiple",
 			"matchPackagePatterns": [
 				"*"
 			]
