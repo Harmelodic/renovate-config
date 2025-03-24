@@ -7,7 +7,7 @@ on:
   workflow_dispatch: {}
 
 jobs:
-  validate:
+  renovate-validate:
     name: Validate
     runs-on: ubuntu-latest
     steps:
