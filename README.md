@@ -1,3 +1,3 @@
 # renovate-config
 
-Personal Renovate Configuration
+Personal Renovate configuration.
