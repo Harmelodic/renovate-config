@@ -11,10 +11,5 @@ jobs:
   verify-github-workflows:
     uses: harmelodic/workflows/.github/workflows/verify-github-workflows.yaml@efebb915210e5e4fbb36910baab02fe951282e4c
 
-  renovate-validate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-      - uses: rinchsan/renovate-config-validator@v0.2.0
-        with:
-          pattern: '*.json' # Regular expression for filename to validate, default to *.json
+  verify-renovate-config:
+    uses: harmelodic/workflows/.github/workflows/verify-renovate-config.yaml@efebb915210e5e4fbb36910baab02fe951282e4c
