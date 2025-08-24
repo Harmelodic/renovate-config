@@ -9,7 +9,7 @@ on:
 
 jobs:
   verify-github-workflows:
-    uses: harmelodic/workflows/.github/workflows/verify-github-workflows.yaml@541e2964bc269db532b73d02671363f55c63d2de
+    uses: harmelodic/workflows/.github/workflows/verify-github-workflows.yaml@4006ee32588d0540ae8d7da1316f58635b9dfeed
 
   verify-renovate-config:
-    uses: harmelodic/workflows/.github/workflows/verify-renovate-config.yaml@541e2964bc269db532b73d02671363f55c63d2de
+    uses: harmelodic/workflows/.github/workflows/verify-renovate-config.yaml@4006ee32588d0540ae8d7da1316f58635b9dfeed
