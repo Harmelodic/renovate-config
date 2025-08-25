@@ -9,6 +9,12 @@
 	"extends": [
 		"config:base"
 	],
+	"gomod": {
+		"postUpdateOptions": [
+			"gomodTidy",
+			"gomodUpdateImportPaths"
+		]
+	},
 	"packageRules": [
 		{
 			"description": "Collect up all multiple dependency updates in a single PR, rather than have separate PRs.",
