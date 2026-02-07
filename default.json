@@ -33,6 +33,9 @@
 		}
 	],
 	"platformAutomerge": true,
+	"postUpdateOptions": [
+		"gomodTidy"
+	],
 	"pruneBranchAfterAutomerge": true,
 	"reviewersFromCodeOwners": true,
 	"regexManagers": [
